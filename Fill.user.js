@@ -3,7 +3,11 @@
 // @description auto fill in the verifi code
 // @match       https://www.ais.tku.edu.tw/EleCos/login.aspx
 // @grant       none
-// @author      @allen0099, @isekai at Telegram
+// @version     1.0
+// @author      @allen0099, @isekai
+// @updateURL   https://raw.githubusercontent.com/allen0099/ElecosAutoFill/master/Fill.user.js
+// @downloadURL https://raw.githubusercontent.com/allen0099/ElecosAutoFill/master/Fill.user.js
+// @homepageURL https://github.com/allen0099/ElecosAutoFill
 // ==/UserScript==
 
 mapping = {
@@ -29,7 +33,6 @@ $.ajax({
     t.value = voice.map(x => mapping[x]).join('');
   }
 });
-
 
 document.getElementById("txtStuNo").value = "12345678";
 document.getElementById("txtPSWD").value = "amazingPassword";
